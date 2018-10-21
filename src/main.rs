@@ -14,7 +14,7 @@ fn main() -> Result<(), failure::Error> {
 
 	let (tx, rx) = mpsc::channel();
 	thread::spawn(move || {
-		let x = tx.send(Event::CpuEvent())
+		let x = tx.send(Event::CpuEvent());
 	});
 	ui::launch_ui()
 }
