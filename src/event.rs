@@ -1,4 +1,4 @@
 pub enum Event {
-    CpuEvent(),
+    CpuEvent(f32),
     MemoryEvent(),
 }
